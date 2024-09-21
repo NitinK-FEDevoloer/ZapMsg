@@ -1,78 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZapMsg</title>
     <link rel="stylesheet" href="./src/css/mainStyle.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" href="./src/assets/icons8-thunder-96.png" alt="lightning-bolt"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="./src/assets/icons8-thunder-96.png" alt="lightning-bolt" />
 </head>
-  
+
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <div class="title-logo">
-            <img src="./src/assets/icons8-thunder-96.png" alt=""/>
+            <img src="./src/assets/icons8-thunder-96.png" alt="" />
             ZapMsg
         </div>
-    </div>
+    </div> -->
 
     <div class="thunderbolt-container">
         <div class="thunderbolt"></div>
     </div>
 
     <div class="main-content">
+
         <div class="image-div">
-            <img src="./src/assets/Desktop - 1.svg" alt="SMS Sending Image" />
+            <img class="hero-banner" src="./src/assets/Desktop - 1.svg" alt="SMS Sending Image" />
         </div>
 
-        <!-- Initial view -->
-        <div id="loginContactDiv" class="login-contact">
-            <div class="tagline heartbeat">
-                <h1>Zap Your Message Instantly – Simplify Bulk Messaging with ZapMsg!</h1>
+        <div class="container-right-side">
+
+            <div class="title-logo">
+                <img src="./src/assets/icons8-thunder-96.png" alt="" />
+                <span>ZapMsg</span>
             </div>
-            <div class="login-buttons">
-                <a href="#" class="btn-login" onclick="toggleLogin()">Login</a>
-                <a href="#" class="btn-contact">Contact</a>
-            </div>
-        </div>
 
-       <!-- Login form -->
-        <div id="loginDiv" class="login-cls">
-        <div class="loginform">
-            <button class="cancel-btn" onclick="toggleLogin()">&#10005;</button> <!-- Cancel Button -->
-            
-            <form>
-                <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter Username" required />
-
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter Password" required />
-
-                <button type="submit">Login</button>
-
-                <div class="separator">or</div>
-
-                <!-- Google Login Button with Icon -->
-                <button class="social-login google">
-                    <img src="./src/assets/icons8-google-plus.svg" alt="Google logo" class="social-icon" />
-                    Login with Google
-                </button>
-
-                <!-- GitHub Login Button with Icon -->
-                <button class="social-login github">
-                    <img src="./src/assets/icons8-github.svg" alt="GitHub logo" class="social-icon" />
-                    Login with GitHub
-                </button>
-
-                <!-- Links for Forgot Password and Create Account -->
-                <div class="login-links">
-                    <a href="#" class="create-account">Create New Account</a>
-                    <a href="#" class="forgot-password">Forgot Password?</a>
+            <div class="contetn-section">
+                <!-- Initial view -->
+                <div id="loginContactDiv" class="login-contact">
+                    <div class="tagline">
+                        <h1 class="">Zap Your Message Instantly</h1>
+                        <span>Simplify Bulk Messaging with ZapMsg!</span>
+                    </div>
+                    <div class="login-buttons">
+                        <a href="#" class="btn-login" onclick="toggleLogin()">Login</a>
+                        <a href="#" class="btn-contact">Contact</a>
+                    </div>
                 </div>
-            </form>
+                <!-- Login form -->
+                <div id="loginDiv" class="login-cls">
+                    <div class="loginform">
+                        <button class="cancel-btn" onclick="toggleLogin()">&#10005;</button> <!-- Cancel Button -->
+            
+                        <form>
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="Enter Username" required />
+            
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter Password" required />
+            
+                            <button type="submit">Login</button>
+            
+                            <div class="separator">or</div>
+            
+                            <!-- Google Login Button with Icon -->
+                            <button class="social-login google">
+                                <img src="./src/assets/icons8-google-plus.svg" alt="Google logo" class="social-icon" />
+                                Login with Google
+                            </button>
+            
+                            <!-- GitHub Login Button with Icon -->
+                            <button class="social-login github">
+                                <img src="./src/assets/icons8-github.svg" alt="GitHub logo" class="social-icon" />
+                                Login with GitHub
+                            </button>
+            
+                            <!-- Links for Forgot Password and Create Account -->
+                            <div class="login-links">
+                                <a href="#" class="create-account">Create New Account</a>
+                                <a href="#" class="forgot-password">Forgot Password?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
+            </div>
         </div>
-</div>
 
     </div>
 
@@ -83,7 +97,7 @@
         <div class="features fade-in slide-in">
             <div class="feature-box">
                 <div class="feature-item">
-                    <img src="https://img.icons8.com/sf-regular/96/iphone.png" alt="Mobile Icon"/>
+                    <img src="https://img.icons8.com/sf-regular/96/iphone.png" alt="Mobile Icon" />
                     <div>
                         <strong>Mobile Integration</strong>
                         <p>Integrate with your iOS/Android app to send notifications to all app users.</p>
@@ -92,7 +106,7 @@
             </div>
             <div class="feature-box">
                 <div class="feature-item">
-                    <img src="https://img.icons8.com/sf-regular/96/secured-letter.png" alt="Email Icon"/>
+                    <img src="https://img.icons8.com/sf-regular/96/secured-letter.png" alt="Email Icon" />
                     <div>
                         <strong>Email Integration</strong>
                         <p>Seamlessly send single or bulk emails directly from the platform.</p>
@@ -101,7 +115,7 @@
             </div>
             <div class="feature-box">
                 <div class="feature-item">
-                    <img src="https://img.icons8.com/sf-regular/96/whatsapp.png" alt="WhatsApp"/>
+                    <img src="https://img.icons8.com/sf-regular/96/whatsapp.png" alt="WhatsApp" />
                     <div>
                         <strong>WhatsApp Messaging</strong>
                         <p>Reach out to your audience via WhatsApp with ease.</p>
@@ -115,28 +129,28 @@
         <h2>Why Choose ZapMsg?</h2>
         <div class="reasons slide-in">
             <div class="reason">
-                <img src="https://img.icons8.com/sf-regular/96/checked.png" alt="Efficiency Icon"/>
+                <img src="https://img.icons8.com/sf-regular/96/checked.png" alt="Efficiency Icon" />
                 <div>
                     <strong>Efficiency</strong>
                     <p>Instantly reach your audience with bulk messages.</p>
                 </div>
             </div>
             <div class="reason">
-                <img src="https://img.icons8.com/ios/50/multiple-devices.png" alt="multiple-devices"/>
+                <img src="https://img.icons8.com/ios/50/multiple-devices.png" alt="multiple-devices" />
                 <div>
                     <strong>Cross-platform Support</strong>
                     <p>Works seamlessly across Email, WhatsApp, and Mobile Apps.</p>
                 </div>
             </div>
             <div class="reason">
-                <img src="https://img.icons8.com/ios/50/combo-chart--v1.png" alt="combo-chart--v1"/>
+                <img src="https://img.icons8.com/ios/50/combo-chart--v1.png" alt="combo-chart--v1" />
                 <div>
                     <strong>Scalable</strong>
                     <p>Suitable for businesses of any size.</p>
                 </div>
             </div>
             <div class="reason">
-                <img src="https://img.icons8.com/sf-regular/96/easy.png" alt="User-friendly Icon"/>
+                <img src="https://img.icons8.com/sf-regular/96/easy.png" alt="User-friendly Icon" />
                 <div>
                     <strong>User-friendly</strong>
                     <p>Simple, intuitive interface for effortless communication.</p>
@@ -164,7 +178,7 @@
             const loginContactDiv = document.getElementById('loginContactDiv');
 
             if (loginDiv.style.display === 'none' || loginDiv.style.display === '') {
-                loginDiv.style.display = 'inline';
+                loginDiv.style.display = 'flex';
                 loginContactDiv.style.display = 'none';
             } else {
                 loginDiv.style.display = 'none';
@@ -172,7 +186,7 @@
             }
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             console.log('Script loaded');
 
             const elements = document.querySelectorAll('.fade-in, .slide-in');
@@ -193,4 +207,5 @@
         });
     </script>
 </body>
+
 </html>
